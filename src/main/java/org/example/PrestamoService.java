@@ -10,9 +10,7 @@ public class PrestamoService {
 
     public String registrar(String cliente) {
 
-        if (evaluador.tieneDeudas(cliente)) {
-            return "Cliente con deudas pendientes";
-        }
+
 
         int score = evaluador.obtenerScore(cliente);
 
