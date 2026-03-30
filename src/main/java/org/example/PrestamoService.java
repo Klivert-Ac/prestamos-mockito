@@ -16,7 +16,9 @@ public class PrestamoService {
 
         int score = evaluador.obtenerScore(cliente);
 
-
+        if (score < 600) {
+            return "Score insuficiente";
+        }
 
         return "Préstamo aprobado";
     }
